@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unit Converter (Vanilla JS)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <div class="container">
+    <div class="card">
+      <h1>Unit Converter</h1>
+      <p>Convert common units with a clean UI and instant results.</p>
+
+      <div class="row">
+        <select id="mode">
+          <option value="km-mi">Kilometers → Miles</option>
+          <option value="mi-km">Miles → Kilometers</option>
+          <option value="c-f">Celsius → Fahrenheit</option>
+          <option value="f-c">Fahrenheit → Celsius</option>
+        </select>
+        <input id="inputValue" type="number" step="any" placeholder="Enter a value..." />
+        <button id="convertBtn" type="button">Convert</button>
+      </div>
+
+      <div class="hr"></div>
+
+      <div>
+        <div><small>Result</small></div>
+        <div class="result" id="result">—</div>
+        <small id="formula"></small>
+      </div>
+    </div>
+  </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
